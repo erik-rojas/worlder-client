@@ -1,0 +1,23 @@
+.filter-item {
+  display: flex;
+  align-items: center;
+  font-family: Sitka Display;
+  font-size: 25px;
+  color: #4c4c4c;
+  border: 2px solid #bdbdbd;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin: 10px 20px 10px 0;
+  cursor: pointer;
+
+  img {
+    width: 50px;
+    margin-right: 10px;
+  }
+}
+
+.selected {
+  font-weight: bold;
+  color: black;
+  background-color: #bdbdbd;
+}

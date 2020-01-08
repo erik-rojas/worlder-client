@@ -1,0 +1,16 @@
+#bg_jobdetail {
+  background-image: url("/assets/images/candidate_cover_2.jpg");
+}
+
+.white-link {
+  a {
+    text-decoration: none;
+  }
+  a:link,
+  a:visited {
+    color: white;
+  }
+  a:hover {
+    color: white;
+  }
+}

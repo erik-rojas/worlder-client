@@ -1,0 +1,17 @@
+
+table>tbody>tr>td {
+    padding: 5px !important;
+}
+
+.select-status-report{
+    width: 100px;
+    border-radius: 4px;
+}
+
+#bought{
+    background-color: greenyellow;
+}
+
+#not_buy{
+    background-color: brown;
+}

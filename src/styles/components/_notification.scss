@@ -1,0 +1,293 @@
+.booking-declined {
+  width: 650px;
+  display: inline-block;
+  overflow: hidden;
+  .bg-banner {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .upgrade {
+    background-color: #05c4e1;
+    padding: 20px 45px;
+    p {
+      margin: 0;
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 11px;
+      font-weight: 400;
+      overflow: hidden;
+      a {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        /* Text style for "UPGRADE" */
+        letter-spacing: 2px;
+        float: right;
+      }
+    }
+  }
+  .gig-tips {
+    background-color: #e2e2e2;
+    padding: 45px;
+    text-align: center;
+    h3 {
+      color: #9b9b9b;
+      font-size: 12px;
+      font-weight: 300;
+      /* Text style for "GigZoo Tip" */
+      font-family: Montserrat;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #9b9b9b;
+      font-size: 12px;
+      font-weight: 300;
+      /* Text style for "Respond as" */
+      letter-spacing: -0.3px;
+      /* Text style for "Try and ac" */
+      letter-spacing: -0.3px;
+      line-height: 14px;
+    }
+  }
+  .declined-content {
+    padding: 45px;
+    text-align: center;
+    .view-booking {
+      margin-top: 60px;
+      display: inline-block;
+      color: #05c4e1;
+      font-size: 13px;
+      font-weight: 300;
+      padding-right: 20px;
+      background: url("/assets/images/Expand.png") no-repeat right center;
+    }
+    .content-package {
+      background-color: rgba(226, 226, 226, 0.3);
+      border-radius: 9px;
+      padding: 45px 0;
+      position: relative;
+      h3 {
+        color: #002d4b;
+        font-family: Montserrat;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 57px;
+      }
+      p {
+        color: #002d4b;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+      }
+      button {
+        position: absolute;
+        bottom: -25px;
+        left: 30%;
+        right: 30%;
+        width: 40%;
+      }
+
+      table {
+        margin-top: 20px;
+        tbody {
+          tr {
+            td {
+              padding: 20px;
+              font-family: Montserrat;
+              font-size: 13px;
+              font-weight: 400;
+              /* Text style for "Package 1" */
+              color: #002d4b;
+              &:first-child {
+                padding-left: 45px;
+                text-align: left;
+              }
+              &:last-child {
+                padding-right: 45px;
+                text-align: right;
+              }
+            }
+            &:first-child {
+              td {
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .declined-title {
+      margin: 0;
+      color: #05c4e1;
+      padding: 0 40px;
+      font-size: 38px;
+      font-weight: 300;
+      margin-bottom: 25px;
+    }
+    h4 {
+      margin: 0;
+      color: #05c4e1;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 36px;
+    }
+    .discount {
+      color: #05c4e1;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 36px;
+      color: #002d4b;
+    }
+    .text-ctn {
+      margin: 0;
+      color: #002d4b;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 36px;
+      padding: 0 60px;
+      margin-bottom: 40px;
+    }
+    .talents {
+      margin-top: 60px;
+      .card-content-result {
+        .photo-carousel {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .ant-card-body {
+          padding: 15px;
+        }
+        .result-card-title {
+          margin-bottom: 10px;
+        }
+        .result-packages {
+          h3 {
+            color: #002d4b;
+            // font-family: Montserrat;
+            font-size: 9px;
+            font-weight: 400;
+          }
+          p {
+            font-size: 9px;
+          }
+        }
+        .star-ratings {
+          .star-container {
+            svg {
+              width: 15px !important;
+              height: 15px !important;
+            }
+          }
+        }
+        .action-booking {
+          margin-top: 15px;
+          a {
+            padding: 14px 20px;
+            color: #ffffff;
+            font-family: "Montserrat";
+            font-size: 10px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .browse-more {
+      width: 50%;
+      margin: 60px auto;
+      button {
+        color: #ffffff;
+        font-family: "Montserrat";
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+    .bg-social {
+      margin-bottom: 60px;
+      a {
+        display: inline-block;
+        background: url("/assets/images/bg-social.png") no-repeat left
+          center;
+        background-size: cover;
+        background-position: 0 0;
+        width: 27px;
+        height: 27px;
+        margin: 0 15px;
+      }
+      .ic-tw {
+        background-position: 0 0;
+      }
+      .ic-fb {
+        background-position: center;
+      }
+      .ic-ins {
+        background-position: right;
+      }
+    }
+    .content-color {
+      p {
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        a {
+          color: #002d4b;
+          font-family: Montserrat;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 18px;
+          color: #002d4b;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.modal-custom {
+  padding: 0 !important;
+  width: 650px !important;
+  margin-bottom: 100px !important;
+  .ant-modal-body {
+    padding: 0 !important;
+  }
+}
+.headerNotification {
+  .dropdown-item:active {
+    color: black;
+  }
+  .headerNotification_menu {
+    padding-bottom: 0px;
+    max-height: 400px;
+    overflow: auto;
+    margin-top: 35px !important;
+    width: 400px;
+    margin-right: -20px !important;
+
+    .navbar-expand-md .navbar-nav .nav-link {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+  }
+  #scroll::-webkit-scrollbar {
+    width: 0.7em;
+  }
+
+  #scroll::-webkit-scrollbar-track {
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  #scroll::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+}

@@ -1,0 +1,90 @@
+.overview-content {
+    .my-gig {
+        .card {
+            padding: 20px;
+            box-shadow: 0 4px 35px rgba(90, 97, 105, 0.1);
+            border-radius: 5px;
+            .title {
+                color: #05c4e1;
+                font-size: 10px;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-bottom: 24px;
+            }
+            .item {
+                padding-top: 19px;
+                padding-bottom: 26px;
+                border-top: 1px solid #e2e2e2;
+                cursor: pointer;
+                h3 {
+                    color: #002d4b;
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+                p {
+                    color: #002d4b;
+                    font-size: 12px;
+                    font-weight: 300;
+                    letter-spacing: -0.3px;
+                    margin: 0;
+                }
+                .time {
+                    color: #002d4b;
+                    font-size: 12px;
+                    font-weight: 300;
+                    letter-spacing: -0.3px;
+                }
+                .price {
+                    color: #05c4e1;
+                    font-size: 12px;
+                    font-weight: 300;
+                    letter-spacing: -0.3px;
+                }
+            }
+        }
+    }
+    .chart {
+        margin-top: 30px;
+        .card {
+            padding: 15px;
+            margin-bottom: 15px;
+            .title {
+                color: #05c4e1;
+                font-size: 10px;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-bottom: 13px;
+                min-height: 30px;
+            }
+            .price {
+                color: #002d4b;
+                font-size: 24px;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+            .content-chart {
+                width: 100%;
+                // height: 140px;
+            }
+        }
+    }
+    .title-events {
+        color: #002d4b;
+        font-size: 29px;
+        font-weight: 300;
+        margin-top: 54px;
+        margin-bottom: 32px;
+    }
+    .message-table {
+        tr {
+            td {
+                color: #002d4b;
+                font-size: 13px;
+                font-weight: 300;
+                &:last-of-type {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

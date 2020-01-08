@@ -1,0 +1,27 @@
+.td-center {
+    text-align: center;
+}
+
+.dropdown-menu-action {
+    padding: 15% 5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.content-dropdown {
+    margin: 0 auto;
+}
+
+.btn-action {
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+table>tbody>tr>td {
+    padding: 5px !important;
+}
+
+table.dataTable {
+    border-collapse: collapse !important;
+}

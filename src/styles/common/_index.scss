@@ -1,0 +1,448 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+input,
+button {
+    outline: none;
+    border: none;
+}
+
+#search-content {
+    input {
+        &::placeholder {
+            color: var(--placeholderColor);
+            /* Firefox */
+        }
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: var(--placeholderColor);
+        }
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: var(--placeholderColor);
+        }
+    }
+}
+
+.content-rating {
+    .star-ratings {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        background: var(--background);
+        padding: 1px 8px;
+        border-radius: 14px;
+        svg {
+            path {
+                stroke: var(--stroke)
+            }
+        }
+    }
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+.border {
+    &--grey {
+        border: 1px solid rgb(224, 224, 224) !important;
+    }
+}
+
+.radius {
+    &__2 {
+        border-radius: 12px;
+    }
+}
+
+.Checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    font-size: 13px !important;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    /* Hide the browser's default checkbox */
+    &__radius {
+        &--50 {
+            .checkmark {
+                border-radius: 50%;
+            }
+        }
+    }
+    .checkbox {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        border-radius: 50%;
+        width: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+    }
+    /* On mouse-over, add a grey background color */
+    .checkbox:hover~.checkmark {
+        background-color: #ffffff;
+    }
+    /* When the checkbox is checked, add a blue background */
+    .checkbox:checked~.checkmark.upcoming{
+        background-color: #05c4e1;
+    }
+
+    .checkbox:checked~.checkmark.pending {
+        background-color: #ffb400;
+    }
+
+    .checkbox:checked~.checkmark.completed {
+        background-color: #e2e2e2;
+    }
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    /* Show the checkmark when checked */
+    .checkbox:checked~.checkmark:after {
+        display: block;
+    }
+    /* Style the checkmark/indicator */
+    .checkmark:after {
+        left: 6px;
+        top: 4px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+.line {
+    width: 140px;
+    height: 2px;
+    background: #002d4b;
+    margin: 0 auto;
+}
+
+// .title {
+//     font-size: 33px;
+//     font-weight: 600;
+//     color: #002d4b;
+//     text-align: center;
+//     margin: 0;
+//     margin-top: 10px;
+// }
+
+.custome-scrollbar {
+    /* width */
+    &::-webkit-scrollbar {
+        width: 7px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #e2e2e2;
+        border-radius: 10px;
+    }
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #d0caca;
+    }
+}
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.custom-checkbox {
+    label {
+        padding-left: 5px;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        &::before {
+            top: 0.15rem !important;
+            border-radius: 50% !important;
+            background: #fff !important;
+        }
+        &::after {
+            top: 0.15rem !important;
+            border-radius: 50% !important;
+            cursor: pointer;
+        }
+    }
+}
+
+.notify-content {
+    padding: 0 35px;
+    cursor: pointer;
+    .ant-badge-count {
+        background-color: #05c4e1;
+    }
+}
+
+.content-select {
+    position: relative;
+    &::after {
+        position: absolute;
+        top: calc(50% - 4px);
+        right: 20px;
+        display: block;
+        width: 16px;
+        height: 8px;
+        content: " ";
+        // background-image: url('images/dropdown.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+.line {
+    width: 140px;
+    height: 2px;
+    background: #002d4b;
+    margin: 0 auto;
+}
+
+// .title {
+//     font-size: 33px;
+//     font-weight: 600;
+//     color: #002d4b;
+//     text-align: center;
+//     margin: 0;
+//     margin-top: 10px;
+// }
+
+.more-link {
+    font-weight: 400;
+    font-size: 13px;
+    color: #05c4e1;
+    line-height: 21px;
+    img {
+        margin-left: 10px;
+    }
+}
+
+div {
+    .fill-btn {
+        margin-top: 20px;
+        width: 100%;
+        border-radius: 30px;
+        background-color: #05c4e1;
+        color: #ffffff;
+        height: 60px;
+        font-size: 16px;
+        font-weight: 700;
+        border: none;
+    }
+    .empty-btn {
+        margin-top: 20px;
+        width: 100%;
+        border-radius: 30px;
+        background-color: #fff;
+        color: #05c4e1;
+        height: 60px;
+        font-size: 16px;
+        font-weight: 700;
+        border: 1px solid #05c4e1;
+    }
+}
+
+.geosuggest__input {
+    &::placeholder {
+        color: #a9a9a9 !important;
+        /* Firefox */
+    }
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #a9a9a9 !important;
+    }
+    &::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #a9a9a9 !important;
+    }
+}
+
+.geosuggest__suggests--hidden {
+    max-height: 0;
+    overflow: hidden;
+    border-width: 0;
+}
+
+.ant-calendar-picker {
+    i {
+        display: none
+    }
+}
+
+
+.marginTop78 {
+    margin-top: 80px;
+}
+
+.update-plan-content {
+    background-color: #05c4e1;
+    padding: 20px 45px;
+    .title {
+        margin: 0;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: left;
+        font-weight: normal;
+        a {
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+}
+
+.ant-message{
+    position: fixed;
+    top: 200px;
+    z-index: 99;
+    left: 550px;
+    border: 1px solid #002c4a;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.ant-message-notice-content {
+    background: #002c4a !important;
+    padding: 8px;
+    .anticon {
+        display: none;
+    }
+    span {
+        color: #fff;
+    }
+}
+
+.ant-notification {
+    .ant-notification-notice {
+        background: #05c4e1 !important;
+    }
+}
+
+.book-now-title {
+    align-items: center;
+    .fill-btn {
+        margin: 0;
+        .anticon {
+            vertical-align: 0.075em;
+        }
+    }
+}
+
+.content-loading {
+    padding: 20px;
+    text-align: center;
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+
+.weekpicker {
+    .current-week {
+        margin: 0 -2px;
+        .ant-fullcalendar-value {
+            width: 100%;
+            background: #1890ff;
+            color: #fff;
+            border-radius: 0;
+        }
+    }
+}
+
+.react-tel-input {
+    input {
+        padding-left: 48px !important;
+        width: 100% !important;
+    }
+    .flag-dropdown {
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+        &:hover {
+            .selected-flag {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.slider-custom-dot {
+    .slick-dots {
+        bottom: 15px;
+        li {
+            margin: 0;
+            button {
+                font-size: 0;
+                line-height: 0;
+                display: block;
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                cursor: pointer;
+                color: transparent;
+                border: 0;
+                outline: none;
+                background: transparent;
+                &::before {
+                    color: #fff;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+select {
+    -webkit-appearance: none;
+}
+
+div {
+    .btn-book-gig {
+        margin: 0 !important;
+        width: 191px !important;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        i {
+            margin-right: 10px;
+        }
+    }
+}

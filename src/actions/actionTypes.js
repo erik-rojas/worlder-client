@@ -1,0 +1,25 @@
+export const EMAIL_REGISTER = "EMAIL_REGISTER";
+export const EMAIL_REGISTER_ERROR = "EMAIL_REGISTER_ERROR";
+export const GET_ALL_COMPANIES = "GET_ALL_COMPANIES";
+export const GET_COMPANY_DETAIL = "GET_COMPANY_DETAIL";
+
+export default {
+  EMAIL_REGISTER,
+  EMAIL_REGISTER_ERROR,
+  GET_ALL_COMPANIES,
+  GET_COMPANY_DETAIL,
+}
+
+// export const emailActions = {
+//   EMAIL_REGISTER: "EMAIL_REGISTER",
+//   EMAIL_REGISTER: "EMAIL_REGISTER"
+// }
+
+// export const companyActions = {
+//   GET_ALL_COMPANIES: "GET_ALL_COMPANIES",
+//   GET_COMPANY_DETAIL: "GET_COMPANY_DETAIL"
+// }
+
+export const searchActions = {
+  SEARCH_KEY_CHANGE: 'SEARCH_KEY_CHANGE'
+}

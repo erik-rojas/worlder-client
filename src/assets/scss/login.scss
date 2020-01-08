@@ -1,0 +1,345 @@
+.contents-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    
+    .container-popular,
+    .container-trending {
+      display: flex;
+      flex-direction: column;
+      width: calc(50% - 230px);
+
+      .container-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Sitka Heading;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 44px;
+        color: rgba(0,0,0,1);
+        padding: 50px 0;
+      }
+
+      .contianer-content {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    .login-form-section {
+      display: flex;
+      flex-direction: column;
+      margin: 100px 0;
+
+      .form-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 385px;
+        height: 520px;
+
+        .form-title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          white-space: nowrap;
+          text-align: left;
+          font-family: Sitka Heading;
+          font-style: normal;
+          font-size: 44px;
+          color: white;
+          line-height: 50px;
+          margin-bottom: 50px;
+          z-index: 1;
+        }
+  
+        svg {
+          position: absolute;
+          width: 385px;
+          height: 520px;
+  
+          .rect-login-section {
+            opacity: 0.82;
+            fill: url(#LinearGradientFill-login);
+            stroke: rgb(145, 133, 133);
+            stroke-width: 5px;
+            stroke-linejoin: round;
+            stroke-linecap: butt;
+            stroke-miterlimit: 4;
+            shape-rendering: auto;
+          }
+        }
+  
+        &-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          z-index: 1;
+  
+          .desc {
+            white-space: nowrap;
+            text-align: center;
+            font-family: Sitka Display;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 20px;
+            color: rgba(255,255,255,1);
+            padding: 15px 0;
+          }
+  
+          .form-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            .fb-btn-loader {
+              
+            }
+  
+            .form-splitter {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 90%;
+              white-space: nowrap;
+              text-align: left;
+              font-family: Sitka Display;
+              font-style: italic;
+              font-weight: normal;
+              font-size: 19px;
+              color: rgba(255,255,255,1);
+              padding: 10px 0;
+              &:after, &:before {
+                display: flex;
+                content: '';
+                width: 38%;
+                height: 1.5px;
+                background-color: black;
+              }
+            }
+  
+            .form-field {
+              .form-input {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 288px;
+                height: 34px;
+  
+                svg {
+                  position: absolute;
+                  width: 288px;
+                  height: 34px;
+  
+                  .rect-form-input {
+                    opacity: 0.7;
+                    fill: #2f2828;
+                    stroke: rgb(255, 255, 255);
+                    stroke-width: 2px;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 4;
+                    shape-rendering: auto;
+                  }
+                }
+  
+                .input-item {
+                  width: 90%;
+                  white-space: nowrap;
+                  text-align: left;
+                  font-family: Sitka Display;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 22px;
+                  color: rgba(255,255,255,1);
+                  background-color: transparent;
+                  z-index: 1;
+                }
+  
+                .ant-calendar-picker {
+                  width: 90%;
+                  input {
+                    width: 100%;
+                    white-space: nowrap;
+                    text-align: left;
+                    font-family: Sitka Display;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 22px;
+                    border: none;
+                    color: rgba(255,255,255,1);
+                    background-color: transparent;
+                    padding: 0;
+                    z-index: 1;
+                  }
+                }
+              }
+            }
+  
+            .form-button {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              width: 280px;
+              height: 48px;
+  
+              svg {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 280px;
+                height: 48px;
+  
+                .rect-form-button {
+                  opacity: 0.76;
+                  fill: url(#LinearGradientFill-form-button);
+                  stroke: rgb(112, 112, 112);
+                  stroke-width: 2px;
+                  stroke-linejoin: miter;
+                  stroke-linecap: butt;
+                  stroke-miterlimit: 4;
+                  shape-rendering: auto;
+                }
+              }
+  
+              button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 276px;
+                height: 45px;
+                white-space: nowrap;
+                text-align: left;
+                font-family: Sitka Display;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 22px;
+                text-transform: uppercase;
+                color: rgba(255,255,255,1);
+                background-color: transparent;
+                padding: 0;
+                z-index: 1;
+              }
+            }
+            .register-account {
+              white-space: nowrap;
+              text-align: left;
+              font-family: Tahoma;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              color: rgba(255,255,255,1);
+  
+              span {
+                color: rgba(22,184,217,1);
+  
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .get-the-app {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 385px;
+      height: 90px;
+
+      svg {
+        position: absolute;
+        width: 385px;
+        height: 90px;
+
+        .rect-get-the-app {
+          opacity: 0.85;
+          fill: url(#LinearGradientFill-get-the-app);
+          stroke: rgb(23, 16, 16);
+          stroke-width: 1px;
+          stroke-linejoin: miter;
+          stroke-linecap: butt;
+          stroke-miterlimit: 4;
+          shape-rendering: auto;
+        }
+      }
+
+      &-text {
+        z-index: 1;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Sitka Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        color: rgba(255,255,255,1);
+        margin-bottom: 5px;
+      }
+
+      .app-stores {
+        display: flex;
+        a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          
+          .app-store-svg {
+            position: absolute;
+            width: 123px;
+            height: 35px;
+            .rect-app-store {
+              fill: url(#app-store-pattern);
+              stroke: rgb(255, 255, 255);
+              stroke-width: 1px;
+              stroke-linejoin: miter;
+              stroke-linecap: butt;
+              stroke-miterlimit: 4;
+              shape-rendering: auto;
+            }
+          }
+          .app-store-img {
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .justify-content-center {
+    justify-content: center;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #332c2c inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

@@ -1,0 +1,36 @@
+.iw-job-advanced_search .categories .selection .select2-selection--multiple {
+    height: 38px;
+}
+
+.iw-job-advanced_search .categories .selection .select2-selection--multiple .select2-selection__rendered {
+    display: flex;
+    line-height: 32px;
+}
+
+.iw-job-advanced_search .categories .selection .select2-selection--multiple .select2-selection__rendered:hover {
+    overflow-x: auto;
+}
+
+.iw-job-advanced_search .categories .selection .select2-selection--multiple .select2-selection__rendered::-webkit-scrollbar { 
+    /* background-color: #F5F5F5; */
+    height: 8px;
+    cursor: pointer;
+}
+
+.iw-job-advanced_search .categories .selection .select2-selection--multiple .select2-selection__rendered::-webkit-scrollbar-track { 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.iw-job-advanced_search .categories .selection .select2-selection--multiple .select2-selection__rendered::-webkit-scrollbar-thumb { 
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.iw-job-advanced_search .categories .selection .select2-selection--multiple .select2-selection__rendered .select2-search { 
+    max-width: calc(100% - 15px);
+}
+
+.iw-job-advanced_search .categories .selection .select2-selection--multiple .select2-selection__rendered .select2-search input { 
+    max-width: calc(100% - 15px);
+}

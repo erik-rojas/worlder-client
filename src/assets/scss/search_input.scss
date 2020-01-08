@@ -1,0 +1,115 @@
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .description-section {
+    display: flex;
+    justify-content: center;
+    span {
+      filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.161));
+      font-family: Sitka Display;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 53px;
+      line-height: 80px;
+      color: rgba(255,255,255,1);
+    }
+  }
+  .field-container {
+    display: flex;
+    margin-top: 10px;
+    .search-where,
+    .search-choose-date,
+    .search-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      svg {
+        position: absolute;
+        height: 50px;
+      }
+    }
+    .search-where,
+    .search-choose-date {
+      margin-right: 20px;
+    }
+    .search-where, .search-where svg {
+      width: 350px;
+    }
+    .search-choose-date, .search-choose-date svg {
+      width: 175px;
+    }
+    .search-btn, .search-btn svg {
+      width: 110px;
+    }
+    .rect-search-where,
+    .rect-search-choose-date,
+    .rect-search-btn {
+      width: 100%;
+      opacity: 0.7;
+      fill: rgba(0,0,0,1);
+      stroke: rgb(255, 255, 255);
+      stroke-width: 2px;
+      stroke-linejoin: miter;
+      stroke-miterlimit: 4;
+      shape-rendering: auto;
+    }
+    .geosuggest {
+      display: flex;
+      flex-direction: column;
+      height: 46px;
+      z-index: 1;
+      ::placeholder {
+        color: white;
+      }
+      &__input-wrapper {
+        display: flex;
+        height: 46px;
+
+        input {
+          overflow: visible;
+          white-space: nowrap;
+          text-align: left;
+          font-family: Sitka Display;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 22px;
+          color: rgba(255,255,255,1);
+          background-color: transparent;
+          ::placeholder {
+            color: white;
+          }
+        }
+      }
+
+      &__suggests-wrapper {
+        position: absolute;
+        margin-top: 50px;
+        
+        ul {
+          padding: 0;
+          margin: 0;
+
+          li {
+            list-style: none;
+            color: white;
+          }
+        }
+      }
+    }
+    .search-btn-text {
+      overflow: visible;
+      white-space: nowrap;
+      text-align: left;
+      font-family: Sitka Display;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      color: rgba(255,255,255,1);
+      z-index: 1;
+    }
+  }
+}

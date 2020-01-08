@@ -1,0 +1,14 @@
+input {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+.profile-table tbody tr td{
+   height: 40px;
+   padding-left: 20px;
+}
+select{
+    min-width: 100px;
+    height: 33.5px;
+    border-radius: 4px;
+}

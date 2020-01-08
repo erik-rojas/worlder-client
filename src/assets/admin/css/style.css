@@ -1,0 +1,33 @@
+[type=checkbox]:checked, [type=checkbox]:not(:checked){
+    position: relative;
+    left: 0;
+    opacity: 1;
+}
+
+a#dell.btn.btn-danger {
+    border-color: unset  !important;
+    border-radius: 4px !important;
+}
+
+.cb-user {
+    display: none !important;
+}
+
+#admin-import-page #form-get-data select.form-control {
+    height: 34px;
+}
+
+#admin-import-page #form-get-data input {
+    height: 34px;
+}
+
+.daterangepicker {
+    z-index: 9999;
+}
+
+.loading {
+    text-align: center;
+    background: #eee;
+    font-size: 20px;
+    padding: 10px;
+}

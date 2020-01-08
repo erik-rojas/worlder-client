@@ -1,0 +1,38 @@
+.slider {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    .row {
+        align-items: center;
+        .btn-arrow {
+            cursor: pointer;
+            width: 42px;
+        }
+        .col {
+            overflow: hidden;
+        }
+        .slick-slider {
+            .slick-list {
+                .slick-track {
+                    display: flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    img {
+                        display: inline;
+                    }
+                    .slick-slide {
+                        div {
+                            text-align: center;
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
